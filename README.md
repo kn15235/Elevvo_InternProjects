@@ -10,7 +10,7 @@ Welcome! This repository showcases my machine learning work completed during my 
 - [Project Highlights](#project-highlights)
   - [Project 1: Student Score Prediction](#project-1-student-score-prediction)
   - [Project 2: Sales Forecasting](#project-2-sales-forecasting)
-  - [Project 3: Melbourne Housing Price Prediction](#project-3-melbourne-housing-price-prediction)
+  - [Project 3: Customer Segmentation](#project-3-customer-segmentation)
   - [Project 4: Traffic Sign Recognition](#project-4-traffic-sign-recognition)
 - [Technologies Used](#technologies-used)
 - [How to Use](#how-to-use)
@@ -55,15 +55,16 @@ This collection contains a variety of projects and notebooks developed during my
 
 ---
 
-### Project 3: Melbourne Housing Price Prediction
+### Project 3: Customer Segmentation
 
 - **Objective:** Predict house prices in Melbourne using machine learning regression techniques.
-- **Dataset:** Melbourne housing data (features include suburb, address, rooms, type, price, location, and property characteristics).
+- **Dataset:** [Mall Customer Segmentation Data (Kaggle)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-signs)
 - **Key Steps:**
-  - Loaded and explored the dataset to understand available features and distributions.
-  - Selected relevant features such as number of rooms, bathroom count, land size, latitude, and longitude.
-  - Built a Decision Tree Regressor model using scikit-learn to predict property prices.
-  - Trained the model and made predictions on sample properties.
+  - Downloaded the Mall Customers dataset from Kaggle and loaded it into a pandas DataFrame.
+  - Selected Annual Income and Spending Score as features and applied standard scaling for normalization.
+  - Used the elbow method to analyze inertia and decide the optimal number of clusters for K-Means.
+  - Applied K-Means clustering with the chosen number of clusters, assigned cluster labels to each customer, and visualized clusters with centroids.
+  - Reviewed and summarized the characteristics of each customer segment by calculating the mean income and spending score per cluster.
 - **Skills Demonstrated:** Data exploration, feature selection, regression modeling, prediction, and Python with scikit-learn.
 
 ---
